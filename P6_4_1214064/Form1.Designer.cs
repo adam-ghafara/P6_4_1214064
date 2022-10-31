@@ -174,6 +174,7 @@
             this.tbTwitter.Name = "tbTwitter";
             this.tbTwitter.Size = new System.Drawing.Size(137, 20);
             this.tbTwitter.TabIndex = 11;
+            this.tbTwitter.Leave += new System.EventHandler(this.tbTwitter_Leave);
             // 
             // warnProvider
             // 
@@ -241,6 +242,8 @@
             this.tbInstagram.Name = "tbInstagram";
             this.tbInstagram.Size = new System.Drawing.Size(137, 20);
             this.tbInstagram.TabIndex = 15;
+            this.tbInstagram.TextChanged += new System.EventHandler(this.tbInstagram_TextChanged);
+            this.tbInstagram.Leave += new System.EventHandler(this.tbInstagram_Leave);
             // 
             // groupBox1
             // 
@@ -264,7 +267,7 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Location = new System.Drawing.Point(12, 202);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(383, 183);
+            this.groupBox1.Size = new System.Drawing.Size(403, 183);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Social Media (Optional)";
@@ -273,7 +276,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(198, 139);
+            this.label14.Location = new System.Drawing.Point(213, 139);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(49, 16);
             this.label14.TabIndex = 28;
@@ -281,7 +284,7 @@
             // 
             // tbOther4
             // 
-            this.tbOther4.Location = new System.Drawing.Point(198, 158);
+            this.tbOther4.Location = new System.Drawing.Point(213, 158);
             this.tbOther4.Name = "tbOther4";
             this.tbOther4.Size = new System.Drawing.Size(161, 20);
             this.tbOther4.TabIndex = 27;
@@ -290,7 +293,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(198, 97);
+            this.label13.Location = new System.Drawing.Point(213, 97);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(49, 16);
             this.label13.TabIndex = 26;
@@ -298,7 +301,7 @@
             // 
             // tbOther3
             // 
-            this.tbOther3.Location = new System.Drawing.Point(198, 116);
+            this.tbOther3.Location = new System.Drawing.Point(213, 116);
             this.tbOther3.Name = "tbOther3";
             this.tbOther3.Size = new System.Drawing.Size(161, 20);
             this.tbOther3.TabIndex = 25;
@@ -307,7 +310,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(198, 58);
+            this.label12.Location = new System.Drawing.Point(213, 58);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(49, 16);
             this.label12.TabIndex = 24;
@@ -315,7 +318,7 @@
             // 
             // tbOther2
             // 
-            this.tbOther2.Location = new System.Drawing.Point(198, 77);
+            this.tbOther2.Location = new System.Drawing.Point(213, 77);
             this.tbOther2.Name = "tbOther2";
             this.tbOther2.Size = new System.Drawing.Size(161, 20);
             this.tbOther2.TabIndex = 23;
@@ -324,7 +327,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(198, 16);
+            this.label11.Location = new System.Drawing.Point(213, 16);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(49, 16);
             this.label11.TabIndex = 22;
@@ -332,7 +335,7 @@
             // 
             // tbOther
             // 
-            this.tbOther.Location = new System.Drawing.Point(198, 35);
+            this.tbOther.Location = new System.Drawing.Point(213, 35);
             this.tbOther.Name = "tbOther";
             this.tbOther.Size = new System.Drawing.Size(161, 20);
             this.tbOther.TabIndex = 21;
@@ -349,7 +352,7 @@
             // 
             // tbSite
             // 
-            this.tbSite.Location = new System.Drawing.Point(22, 158);
+            this.tbSite.Location = new System.Drawing.Point(25, 158);
             this.tbSite.Name = "tbSite";
             this.tbSite.Size = new System.Drawing.Size(164, 20);
             this.tbSite.TabIndex = 19;
@@ -366,10 +369,11 @@
             // 
             // tbFacebook
             // 
-            this.tbFacebook.Location = new System.Drawing.Point(22, 116);
+            this.tbFacebook.Location = new System.Drawing.Point(25, 116);
             this.tbFacebook.Name = "tbFacebook";
             this.tbFacebook.Size = new System.Drawing.Size(161, 20);
             this.tbFacebook.TabIndex = 18;
+            this.tbFacebook.Leave += new System.EventHandler(this.tbFacebook_Leave);
             // 
             // tbPhone
             // 

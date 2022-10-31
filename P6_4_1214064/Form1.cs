@@ -122,5 +122,58 @@ namespace P6_4_1214064
                 MessageBox.Show("Register Successful!");
             }
         }
+
+        private void tbTwitter_Leave(object sender, EventArgs e)
+        {
+            if ((tbTwitter.Text).All(Char.IsUpper))
+            {
+                errorProvider.SetError(tbTwitter, "Lowercase Only");
+                warnProvider.SetError(tbTwitter, "");
+                checkProvider.SetError(tbTwitter, "");
+            }
+            else if ((tbTwitter.Text).All(Char.IsLower))
+            {
+                errorProvider.SetError(tbTwitter, "");
+                warnProvider.SetError(tbTwitter, "");
+                checkProvider.SetError(tbTwitter, "Ok!");
+            }
+        }
+
+        private void tbInstagram_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbInstagram_Leave(object sender, EventArgs e)
+        {
+            if ((tbInstagram.Text).All(Char.IsUpper))
+            {
+                errorProvider.SetError(tbInstagram, "Lowercase Only");
+                warnProvider.SetError(tbInstagram, "");
+                checkProvider.SetError(tbInstagram, "");
+            }
+            else if ((tbInstagram.Text).All(Char.IsLower))
+            {
+                errorProvider.SetError(tbInstagram, "");
+                warnProvider.SetError(tbInstagram, "");
+                checkProvider.SetError(tbInstagram, "Ok!");
+            }
+        }
+
+        private void tbFacebook_Leave(object sender, EventArgs e)
+        {
+            if ((tbFacebook.Text).All(Char.IsLower))
+            {
+                errorProvider.SetError(tbFacebook, "Uppercase Only");
+                warnProvider.SetError(tbFacebook, "");
+                checkProvider.SetError(tbFacebook, "");
+            }
+            else if ((tbFacebook.Text).All(Char.IsUpper))
+            {
+                errorProvider.SetError(tbFacebook, "");
+                warnProvider.SetError(tbFacebook, "");
+                checkProvider.SetError(tbFacebook, "Ok!");
+            }
+        }
     }
 }
